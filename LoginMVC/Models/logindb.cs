@@ -18,7 +18,7 @@ namespace LoginMVC.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "please Enter Username")]
+        [Required(ErrorMessage = "lease Enter Username")]
         [DisplayName("Username")]
         public string Username { get; set; }
 
@@ -26,5 +26,8 @@ namespace LoginMVC.Models
         [DisplayName("Password")]
         [Required(ErrorMessage ="please Enter password")]
         public string password { get; set; }
+
+        [DisplayName("Remember Me")]
+        public bool Rememberme { get; set; }
     }
 }
